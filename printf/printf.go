@@ -9,9 +9,9 @@ func main() {
 	name := "Alice"
 
 	//Formatted print
-	fmt.Printf("Name is %s \n", name)
-	fmt.Printf("Age is %d \n", age)
-	fmt.Printf("Height is %.3f \n", height)
+	fmt.Printf("Name is %s \n", name)       //For string
+	fmt.Printf("Age is %d \n", age)         //for int
+	fmt.Printf("Height is %.3f \n", height) //for float
 
 	//Check data type of variable
 	fmt.Printf("Type of Age is %T \n", age)
