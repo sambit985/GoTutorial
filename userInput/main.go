@@ -15,6 +15,6 @@ func main() {
 
 	//Read all full linr user input untill new line
 	reader := bufio.NewReader(os.Stdin)
-	name, _ = reader.ReadString('\n')
+	name, _ = reader.ReadString('\n') //used "_" to ignore error or other value
 	fmt.Println("Hello Mr.", name)
 }
