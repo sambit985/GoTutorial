@@ -284,6 +284,50 @@ func main() {
 }
 ```
 
+## Structs
+
+🧩 **Structs in Go** 🧩
+
+In Go, maps are an essential data structure that allows you to store and retrieve data in key-value pairs. They provide a way to quickly access values based on unique keys. Maps are similar to dictionaries in Python or hash tables in other languages.
+
+### Why Use Structs?
+
+- **Organized Data**: Structs help in organizing related data under one type, making the code more readable and maintainable.
+- **Custom Data Types**: Structs allow you to define your own data types that represent specific entities, making your code more expressive.
+- **Methods**: You can associate methods with structs, encapsulating both data and behavior together.
+
+#### Defining a Struct
+
+You define a struct in Go using the type keyword, followed by the struct name and the list of fields.
+
+### Example
+
+```go
+package main
+
+import "fmt"
+
+// Defining a struct for a Person
+type Person struct {
+    Name   string
+    Age    int
+    Gender string
+}
+
+func main() {
+    // Creating an instance of the struct
+    p1 := Person{Name: "Alice", Age: 30, Gender: "Female"}
+
+    // Accessing and modifying fields
+    fmt.Println("Name:", p1.Name)
+    fmt.Println("Age:", p1.Age)
+    fmt.Println("Gender:", p1.Gender)
+
+    p1.Age = 31
+    fmt.Println("Updated Age:", p1.Age)
+}
+```
+
 ## Contact and Follow 📬
 
 If you have any questions, suggestions, or just want to connect, feel free to reach out or follow me on social media.
