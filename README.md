@@ -225,8 +225,8 @@ func main() {
 
 If you have any questions, suggestions, or just want to connect, feel free to reach out or follow me on social media.
 
-- **📧 Gmail**: [sambit98530@gmail.com](mailto:your.email@example.com)
-- **🔗 LinkedIn**: [https://www.linkedin.com/in/sambit-kumar-nayak/](https://www.linkedin.com/in/your-profile)
+- **📧 Gmail**: [Sambit Gmail](sambit98530@gmail.com)
+- **🔗 LinkedIn**: [Sambit Linkedin](https://www.linkedin.com/in/sambit-kumar-nayak/)
 
 ### Why Connect? 🤝
 
