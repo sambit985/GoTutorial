@@ -330,7 +330,7 @@ func main() {
 
 ## Pointers
 
-🔗 ** Pointers in Go ** 🔗
+🔗 **Pointers in Go** 🔗
 
 In Go, pointers are a powerful feature that allow you to work with memory addresses directly. They enable you to reference and modify values stored in memory, making your programs more efficient and flexible.
 
