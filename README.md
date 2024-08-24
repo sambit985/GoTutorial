@@ -370,6 +370,83 @@ func main() {
 }
 ```
 
+## Strings Package
+
+🔗 **String Manipulation in Go** 🔗
+
+Go provides a rich set of built-in functions for working with strings, making it easy to perform various operations such as searching, splitting, joining, and modifying strings. The strings package in Go is a powerful tool for developers who need to handle text processing efficiently.
+
+### Importing the strings Package
+
+Before you can use the string functions, you need to import the strings package:
+
+```go
+import "strings"
+```
+
+### Commonly Used String Functions
+
+### 1. Contains
+
+```go
+strings.Contains("hello world", "world") // Returns: true
+```
+
+### 2.HasPrefix
+
+```go
+strings.HasPrefix("hello world", "hello") // Returns: true
+```
+
+### 3.Index
+
+```go
+strings.Index("hello world", "world") // Returns: 6
+```
+
+### 4.Join
+
+```go
+strings.Join([]string{"hello", "world"}, ", ") // Returns: "hello, world"
+```
+
+### 5.Split
+
+```go
+strings.Split("a,b,c", ",") // Returns: ["a", "b", "c"]
+```
+
+### 6.Replace
+
+```go
+strings.Replace("hello world", "world", "Go", 1) // Returns: "hello Go"
+```
+
+### 7.ToLower
+
+```go
+strings.ToLower("HELLO WORLD") // Returns: "hello world"
+```
+
+### 8.Count
+
+```go
+strings.Count("hello world", "l") // Returns: 3
+```
+
+### 9.Compare
+
+```go
+strings.Compare("a", "b") // Returns: -1
+```
+
+### 10.Repeat
+
+```go
+strings.Repeat("Go ", 3) // Returns: "Go Go Go "
+
+```
+
 ## Contact and Follow 📬
 
 If you have any questions, suggestions, or just want to connect, feel free to reach out or follow me on social media.
@@ -386,3 +463,15 @@ Connecting with me through Gmail or LinkedIn allows you to:
 - **🤝 Collaborate**: I'm always open to collaboration on interesting projects. If you have an idea or project you'd like to work on together, let's connect!
 
 Feel free to reach out at any time—I'm always excited to connect with fellow developers and tech enthusiasts!
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
