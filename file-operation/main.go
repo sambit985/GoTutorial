@@ -41,6 +41,7 @@ func main() {
 	buffer := make([]byte, 1024)
 
 	//Read the file and store the buffer data to buffer slice
+	//Infinite for loop
 	for {
 		//Read file which giving chunk data or byte data, at the same time  push to buffer chunk wise
 		_, error := file.Read(buffer)
@@ -52,18 +53,17 @@ func main() {
 			fmt.Println("Error while reading file:--", error)
 			return
 		}
-
-		//process the buffer read by converting to string
-		fmt.Println(string(buffer))
-
-		//ioutil.REadFile() or os.ReadFile() we can use for same purpose but it is not good approach when reading big file beacuse it is taking whole data and puting into memory at a single time
-
-		content, errors := os.ReadFile("example.txt")
-		if errors != nil {
-			fmt.Println("Error while reading file")
-			return
-		}
-		fmt.Println(string(content))
 	}
+	//process the buffer read by converting to string
+	fmt.Println(string(buffer))
+
+	//ioutil.REadFile() or os.ReadFile() we can use for same purpose but it is not good approach when reading big file beacuse it is taking whole data and puting into memory at a single time
+
+	content, errors := os.ReadFile("example.txt")
+	if errors != nil {
+		fmt.Println("Error while reading file")
+		return
+	}
+	fmt.Println(string(content))
 
 }
