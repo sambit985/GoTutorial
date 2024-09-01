@@ -6,8 +6,8 @@ import (
 	"net/http"
 )
 
-func getData(url string) (string, error) {
-	res, error := http.Get(url)
+func getData(getUrl string) (string, error) {
+	res, error := http.Get(getUrl)
 	if error != nil {
 		fmt.Println("Error while frtching data:--", error)
 		return "", error
@@ -20,16 +20,6 @@ func getData(url string) (string, error) {
 	if err != nil {
 		return "", err
 	}
+	//fmt.Println("The body is:", body)
 	return string(body), nil
-}
-
-func main() {
-	fmt.Println("This is crud api learning file")
-	url := "https://jsonplaceholder.typicode.com/todos/1/"
-
-	data, err := getData(url)
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println("Get data:--", data)
 }
