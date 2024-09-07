@@ -3,10 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// fmt.Println("This is crud api learning file")
+	fmt.Println("This is crud api learning file")
 	getUrl := "https://jsonplaceholder.typicode.com/todos/1"
 	postUrl := "https://jsonplaceholder.typicode.com/posts"
 	updateUrl := "https://jsonplaceholder.typicode.com/todos/1"
+	deleteUrl := "https://jsonplaceholder.typicode.com/todos/1"
 
 	//Calling getData()
 	data, err := getData(getUrl)
@@ -26,4 +27,7 @@ func main() {
 
 	updateData, _ := UpdateTodo(updateUrl)
 	fmt.Println("Update response:", updateData)
+
+	deleteData := deleteTodo(deleteUrl)
+	fmt.Println("Deelete response:", deleteData)
 }
