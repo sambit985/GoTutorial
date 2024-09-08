@@ -560,6 +560,39 @@ func main() {
 - **Permissions**: Set appropriate file permissions based on your application's requirements.
 - **Buffering**: For large files or frequent operations, consider using buffered I/O for efficiency.
 
+## Goroutines in Go 
+Goroutines are lightweight threads managed by the Go runtime. Unlike traditional threads, goroutines are extremely efficient, allowing thousands or even millions of goroutines to run concurrently. They enable concurrent execution of functions, making Go highly effective for parallel and concurrent programming.
+
+### Creating Goroutines
+You can create a goroutine by prefixing a function or method call with the go keyword. This starts a new goroutine that runs concurrently with the calling function.
+However, the main function exits immediately, so we use time.Sleep() to give the goroutine time to finish.
+
+```go
+package main
+
+import (
+    "fmt"
+    "time"
+)
+
+func sayHello() {
+    fmt.Println("Hello from goroutine!")
+    time.Sleep(1000 * time.MiliSecond)
+}
+func sayHi(){
+    fmt.Println("Hii")
+}
+func main() {
+    // Start a goroutine
+    go sayHello()
+    go sayHi()
+
+    // Ensure the main function waits before exiting
+    time.Sleep(1 * time.Second)
+}
+```
+
+
 ## Contact and Follow 📬
 
 If you have any questions, suggestions, or just want to connect, feel free to reach out or follow me on social media.
